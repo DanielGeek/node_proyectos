@@ -1,0 +1,20 @@
+{
+  "name": "LiverServer",
+  "version": "1.0.0",
+  "description": "Proyecto en Nodejs Live Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server public --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGeek/Nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGeek/Nodejs/issues"
+  },
+  "homepage": "https://github.com/DanielGeek/Nodejs#readme"
+}
