@@ -1,13 +1,13 @@
-import Sequelize from 'sequelize';
+import Sequelize from 'sequelize'
 
- export const sequelize = new Sequelize(
-    'postgres', // name_bd
-    'postgres', // user_bd
-    '123'     , // passwd_bd
+export const sequelize = new Sequelize(
+    'postgres', // db name,
+    'postgres', // username
+    '123', // password
     {
         host: 'localhost',
         dialect: 'postgres',
-        pool:{
+        pool: {
             max: 5,
             min: 0,
             require: 30000,
@@ -15,4 +15,4 @@ import Sequelize from 'sequelize';
         },
         logging: false
     }
-)
+);

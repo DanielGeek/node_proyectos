@@ -1,24 +1,16 @@
 {
-  "name": "Nodejs",
+  "name": "nodejs-postgresql-restapi",
   "version": "1.0.0",
-  "description": "Proyecto API en Nodejs con PostgreSql, Sequelize, babel,\r comandos para que funcione el proyecto\r npm install\r npm run dev",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src --out-dir dist",
     "start": "node dist/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DanielGeek/Nodejs.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DanielGeek/Nodejs/issues"
-  },
-  "homepage": "https://github.com/DanielGeek/Nodejs#readme",
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
     "express": "^4.17.1",
@@ -32,6 +24,7 @@
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "nodemon": "^2.0.2"
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^5.5.1"
   }
 }

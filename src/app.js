@@ -1,19 +1,17 @@
-import express, { json } from 'express';
-import morgan from 'morgan';
+import express, { json } from 'express'
+import morgan from 'morgan'
 
 const app = express();
 
-// importa rutas
+// Import routes
 import projectRoutes from './routes/projects';
-import taskRoutes from './routes/tasks';
+import taskRoutes from './routes/tasks'
 
-// middlewares
-//mostrar peticiones por consola
+// Middlewares
 app.use(morgan('dev'));
-// entender datos json
 app.use(json());
 
-// rutas
+// Routes
 app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
 

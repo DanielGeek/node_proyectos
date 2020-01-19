@@ -1,5 +1,6 @@
-import Sequelize from 'sequelize';
-import { sequelize } from '../database/database';
+const Sequelize = require('sequelize');
+const { sequelize } = require('../database/database');
+
 
 const Task = sequelize.define('task', {
     id: {
@@ -7,16 +8,16 @@ const Task = sequelize.define('task', {
         primaryKey: true
     },
     name: {
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
     },
     done: {
         type: Sequelize.BOOLEAN
     },
-    projectId: {
+    projectid: {
         type: Sequelize.INTEGER
     }
 }, {
-    timestamps:  false
+    timestamps: false
 });
 
-export default Task;
+module.exports = Task;
