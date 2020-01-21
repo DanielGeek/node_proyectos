@@ -8,7 +8,7 @@ export async function getProjects(req, res) {
         });
         res.json({
             data: projects
-        })
+        });
     } catch (error) {
         console.log(error);
         res.json({

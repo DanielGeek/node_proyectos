@@ -3,10 +3,10 @@ import Task from '../models/Task';
 
 export async function createTask(req, res) {
     try {
-        const { name, done, projectId } = req.body;
+        const { name, done, projectid } = req.body;
         console.log(req.body);
         const newTask = await Task.create({
-            projectId,
+            projectid,
             name,
             done
         }, {

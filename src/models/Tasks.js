@@ -12,7 +12,7 @@ const Task = sequelize.define('task', {
     done: {
         type: Sequelize.BOOLEAN
     },
-    projectId: {
+    projectid: {
         type: Sequelize.INTEGER
     }
 }, {
