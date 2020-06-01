@@ -15,10 +15,18 @@ app.get('/', function (req, res) {
 app.post('/usuario', function (req, res) {
 
     let body = req.body;
+    if( body.nombre === undefined ) {
+        res.status(400).json({
+            ok: false,
+            mensaje: 'El nombre es necesario'
+        })
+    } else {
+        
+        res.json({
+            persona: body
+        });
+    }
 
-    res.json({
-        persona: body
-    });
 });
 
 app.put('/usuario/:id', function (req, res) {
