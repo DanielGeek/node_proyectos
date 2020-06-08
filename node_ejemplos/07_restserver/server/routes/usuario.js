@@ -28,10 +28,15 @@ app.get('/usuario', function (req, res) {
                 });
             }
 
-            res.json({
-                ok: true,
-                usuarios
-            })
+            Usuario.count({}, (err, conteo) => {
+               
+                res.json({
+                    ok: true,
+                    usuarios,
+                    cuantos: conteo
+                });
+
+            });
         })
 });
  
