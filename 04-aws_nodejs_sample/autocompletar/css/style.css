@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#map {
+	width: 100%;
+	height: 400px;
+}
+.controls {
+	margin-top: 10px;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#searchInput {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 50%;
+}
+#searchInput:focus {
+ 	border-color: #4d90fe;
+}
+.geo-data{
+	border: 2px dashed #2A99CF;
+    padding: 10px;
+    font-size: 17px;
+	list-style: none;
+    text-align: left;
+}
+.geo-data span{
+	color: #ed691f;
+}

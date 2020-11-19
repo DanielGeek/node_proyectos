@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autocompletar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- search input -->
+        <input id="searchInput" class="controls" type="text" placeholder="Ingrese una localidad">
+
+        <!-- google map -->
+        <div id="map"></div>
+
+        <!-- display geo location data -->
+        <ul class="geo-data">
+            <li>Dirección: <span id="location"></span></li>
+            <li>Código postal: <span id="postal_code"></span></li>
+            <li>Pais: <span id="country"></span></li>
+            <li>Latitud: <span id="lat"></span></li>
+            <li>Longitud: <span id="lon"></span></li>
+        </ul>
+    </div>
+
+<!-- Google Maps JavaScript library -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=tuapikey&callback=initMap" async defer></script>
+<script src="js/iniciar.js"></script>
+</body>
+</html>

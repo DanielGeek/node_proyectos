@@ -1,0 +1,26 @@
+{
+  "name": "scraping_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGeek/scraping_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGeek/scraping_node/issues"
+  },
+  "homepage": "https://github.com/DanielGeek/scraping_node#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}

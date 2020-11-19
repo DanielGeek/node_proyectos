@@ -1,0 +1,27 @@
+{
+  "name": "REST_API_Nodejs_PostgreSQL-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGeek/REST_API_Nodejs_PostgreSQL-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGeek/REST_API_Nodejs_PostgreSQL-/issues"
+  },
+  "homepage": "https://github.com/DanielGeek/REST_API_Nodejs_PostgreSQL-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

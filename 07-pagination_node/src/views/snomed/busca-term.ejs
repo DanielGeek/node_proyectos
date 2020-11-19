@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+
+<div class="container">
+    <div class="row p-4">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Buscar término</h1>
+                        <form action="/add-product" 2 action="" class="form-term">
+                            <div class="form-group">
+                                <label for="term">Nombre de término</label>
+                                <input type="text" class="form-control" name="term" id="term" placeholder="e.j: banana">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="busca-term">Buscar</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../partials/term') %>
+<%- include('../partials/footer') %>

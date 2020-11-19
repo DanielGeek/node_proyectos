@@ -1,0 +1,17 @@
+<script>
+
+    $(document).ready(function(){
+   //código a ejecutar cuando el DOM está listo para recibir instrucciones.
+   $(document).on("click","#busca-term",function(event) {
+        event.preventDefault();
+        var term = $('#term').val()
+        console.log(' dio click en buscar termino el valor es' + term);
+        var pathname = window.location.pathname;
+        window.location.replace(pathname + '/' + term);
+
+    });
+});
+    
+    
+
+</script>

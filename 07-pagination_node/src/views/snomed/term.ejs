@@ -1,0 +1,34 @@
+<%- include('../partials/head') %>
+<div class="container">
+    <div class="row p-5">
+
+        <!-- pruductos -->
+        <% for(var i = 0; i < itemsTerm.length; i++) { %>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <div class="card">
+                        <!-- <img src="<%= itemsTerm[i].cover %>" alt="<%= itemsTerm[i].name %>" class="card-img-top"> -->
+                        <div class="card-body">
+                            <h3 class="card-title">Término:<%= itemsTerm[i].term %></h3>
+                            
+                            <% if(itemsTerm[i].active == true) { %>
+                                <p class="card-text">Estado:  Activo</p>
+                            <% } else{ %>
+                                <p class="card-text">Estado:  Inactivo</p>
+                           <% }  %>
+                        
+                            <p class="card-text">Código lenguaje: <%= itemsTerm[i].languageCode %></p>
+                            <p class="card-text">Concepto ID: <%= itemsTerm[i].concept.conceptId %> </p>
+                            <p class="card-text">Definición Estatus: <%= itemsTerm[i].concept.definitionStatus %> </p>
+                            <p class="card-text">Concepto término: <%= itemsTerm[i].concept.fsn.term %> </p>
+                            <p class="card-text">Concepto lenguaje: <%= itemsTerm[i].concept.fsn.lang %> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <!-- row paginacion -->
+</div>
+
+<%- include('../partials/footer') %>

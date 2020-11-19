@@ -1,0 +1,30 @@
+{
+  "name": "CRUD_Node",
+  "version": "1.0.0",
+  "description": "CRUD en Node, Mongodb, express, mongoose y  bootstrap4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGeek/CRUD_Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGeek/CRUD_Node/issues"
+  },
+  "homepage": "https://github.com/DanielGeek/CRUD_Node#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.6",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

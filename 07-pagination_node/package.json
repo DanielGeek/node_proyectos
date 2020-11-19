@@ -1,0 +1,33 @@
+{
+  "name": "pagination_node",
+  "version": "1.0.0",
+  "description": "Paginación con node, mongodb, express y bootstrap4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGeek/pagination_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGeek/pagination_node/issues"
+  },
+  "homepage": "https://github.com/DanielGeek/pagination_node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.8.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
