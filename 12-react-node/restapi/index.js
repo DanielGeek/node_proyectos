@@ -8,7 +8,8 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/restapis', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
 });
 
 // Crear el servidor

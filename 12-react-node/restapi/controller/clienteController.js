@@ -48,3 +48,22 @@ exports.mostrarCliente = async (req, res, next) => {
         next();
     }
 }
+
+// Actualizar un cliente
+exports.actualizarCliente = async (req, res, next) => {
+    const { idCliente } = req.params;
+    try {
+
+        const cliente = await Clientes.findOneAndUpdate({ _id: idCliente }, req.body, { new: true });
+        res.json(cliente);
+
+    } catch (error) {
+
+        res.json({
+            mensaje: error
+        });
+        console.log(error);
+        next();
+
+    }
+}
