@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import { Link } from 'react-router-dom';
 
 export const Navegacion = () => {
     return (
@@ -6,9 +8,9 @@ export const Navegacion = () => {
             <h2>Administración</h2>
 
             <nav className="navegacion">
-                <a href="/" className="clientes">Clientes</a>
-                <a href="/productos" className="productos">Productos</a>
-                <a href="/pedidos" className="pedidos">Pedidos</a>
+                <Link to={"/"} className="clientes">Clientes</Link>
+                <Link to={"/productos"} className="productos">Productos</Link>
+                <Link to={"/pedidos"} className="pedidos">Pedidos</Link>
             </nav>
         </aside>
     )
