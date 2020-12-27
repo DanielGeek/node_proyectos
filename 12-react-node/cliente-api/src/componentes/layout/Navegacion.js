@@ -6,9 +6,9 @@ export const Navegacion = () => {
             <h2>Administración</h2>
 
             <nav className="navegacion">
-                <a href="index.html" className="clientes">Clientes</a>
-                <a href="productos.html" className="productos">Productos</a>
-                <a href="pedidos.html" className="pedidos">Pedidos</a>
+                <a href="/" className="clientes">Clientes</a>
+                <a href="/productos" className="productos">Productos</a>
+                <a href="/pedidos" className="pedidos">Pedidos</a>
             </nav>
         </aside>
     )
