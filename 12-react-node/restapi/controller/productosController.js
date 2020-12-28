@@ -65,3 +65,18 @@ exports.mostrarProductos = async (req, res, next) => {
         next();
     }
 }
+
+// Muestra un producto por su id
+exports.mostrarProducto = async (req, res, next) => {
+
+    const { idProducto } = req.params;
+    const producto = await Productos.findById(idProducto);
+
+    if (!producto) {
+        res.json({ mensaje: 'Ese producto no existe' });
+        return next();
+    }
+
+    // Mostrar el producto
+    res.json(producto);
+}
