@@ -41,5 +41,8 @@ module.exports = function () {
         productosController.actualizarProducto
     );
 
+    // Eliminar productos
+    router.delete('/productos/:idProducto', productosController.eliminarProducto);
+
     return router;
 }
