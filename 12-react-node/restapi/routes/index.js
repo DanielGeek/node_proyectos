@@ -5,6 +5,8 @@ const clienteController = require('../controller/clienteController');
 
 const productosController = require('../controller/productosController');
 
+const pedidosController = require('../controller/pedidosController');
+
 module.exports = function () {
 
     // Agregar nuevos clientes via POST
@@ -43,6 +45,9 @@ module.exports = function () {
 
     // Eliminar productos
     router.delete('/productos/:idProducto', productosController.eliminarProducto);
+
+    /** PEDIDOS **/
+    router.post('/pedidos', pedidosController.nuevoPedido);
 
     return router;
 }
