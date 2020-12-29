@@ -56,5 +56,8 @@ module.exports = function () {
     // Mostrar un pedido por su id
     router.get('/pedidos/:idPedido', pedidosController.mostrarPedido);
 
+    // Actualizar pedidos
+    router.put('/pedidos/:idPedido', pedidosController.actualizarPedido);
+
     return router;
 }
