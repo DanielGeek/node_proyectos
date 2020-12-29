@@ -47,7 +47,11 @@ module.exports = function () {
     router.delete('/productos/:idProducto', productosController.eliminarProducto);
 
     /** PEDIDOS **/
+    // Agregar nuevos pedidos
     router.post('/pedidos', pedidosController.nuevoPedido);
+
+    // Mostrar todos los pedidos
+    router.get('/pedidos', pedidosController.mostrarPedidos);
 
     return router;
 }
