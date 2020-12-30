@@ -12,8 +12,9 @@ exports.nuevoCliente = async (req, res, next) => {
             status: 200
         });
     } catch (error) {
+        res.send(error);
         // Si hay un error, console.log y next
-        console.log(error);
+        console.log('error es', error);
         next();
     }
 }

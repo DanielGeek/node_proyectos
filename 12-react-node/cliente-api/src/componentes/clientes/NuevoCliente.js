@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import clienteAxios from '../../config/axios';
 
 export const NuevoCliente = () => {
 
@@ -20,6 +21,22 @@ export const NuevoCliente = () => {
         });
     }
 
+    // Añade en la REST API un cliente nuevo
+    const agregarCliente = e => {
+        e.preventDefault();
+
+        // enviar petifición
+        clienteAxios.post('/clientes', cliente)
+            .then(res => {
+                // validar si hay errores de mongo
+                if (res.data.code === 11000) {
+                    console.log('Error de duplicado de Mongo');
+                } else {
+                    console.log(res.data);
+                }
+            });
+    }
+
     // Validar el formulario
     const validarCliente = () => {
         // Destructuring
@@ -36,7 +53,9 @@ export const NuevoCliente = () => {
         <Fragment>
             <h2>Nuevo Cliente</h2>
 
-            <form>
+            <form
+                onSubmit={agregarCliente}
+            >
                 <legend>Llena todos los campos</legend>
 
                 <div className="campo">
@@ -61,7 +80,7 @@ export const NuevoCliente = () => {
 
                 <div className="campo">
                     <label>Teléfono:</label>
-                    <input type="email" placeholder="Teléfono Cliente" name="telefono" onChange={actualizarState} />
+                    <input type="tel" placeholder="Teléfono Cliente" name="telefono" onChange={actualizarState} />
                 </div>
 
                 <div className="enviar">
