@@ -20,6 +20,18 @@ export const NuevoCliente = () => {
         });
     }
 
+    // Validar el formulario
+    const validarCliente = () => {
+        // Destructuring
+        const { nombre, apellido, email, empresa, telefono } = cliente;
+
+        // revisar que las propiedas del state tenga contenido
+        let valido = !nombre.length || !apellido.length || !email.length || !empresa.length || !telefono.length;
+
+        // return true o false
+        return valido;
+    }
+
     return (
         <Fragment>
             <h2>Nuevo Cliente</h2>
@@ -53,7 +65,7 @@ export const NuevoCliente = () => {
                 </div>
 
                 <div className="enviar">
-                    <input type="submit" className="btn btn-azul" value="Agregar Cliente" onChange={actualizarState} />
+                    <input type="submit" className="btn btn-azul" value="Agregar Cliente" disabled={validarCliente()} />
                 </div>
 
             </form>
