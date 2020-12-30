@@ -3,7 +3,7 @@ import React from 'react';
 export const Cliente = ({ cliente }) => {
 
     // Extraer los valores
-    const { _id, nombre, apellido, empresa, email, telefono } = cliente;
+    const { nombre, apellido, empresa, email, telefono } = cliente;
 
     return (
         <li className="cliente">
