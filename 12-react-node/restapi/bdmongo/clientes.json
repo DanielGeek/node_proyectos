@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5fe871562a9363258c8a5956"
+  },
+  "nombre": "Daniel",
+  "apellido": "Ángel",
+  "empresa": "zerviz",
+  "email": "dangel@gmail.com",
+  "telefono": "123321234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe8731fe6beeb348ced3226"
+  },
+  "nombre": "Jessica",
+  "apellido": "Baettig",
+  "empresa": "Facebook",
+  "email": "jessica@gmail.com",
+  "telefono": "123321222",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5febf5ae26002b28a8318d07"
+  },
+  "nombre": "Daniel",
+  "apellido": "Angel",
+  "empresa": "zerviz",
+  "email": "dangel2@gmail.com",
+  "telefono": "1231231213",
+  "__v": 0
+}]

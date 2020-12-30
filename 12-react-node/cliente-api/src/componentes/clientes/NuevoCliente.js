@@ -1,7 +1,10 @@
 import React, { Fragment, useState } from 'react';
+import Swal from 'sweetalert2';
+import { withRouter } from 'react-router-dom';
 import clienteAxios from '../../config/axios';
 
-export const NuevoCliente = () => {
+
+const NuevoCliente = ({ history }) => {
 
     const [cliente, guardarCliente] = useState({
         nombre: '',
@@ -30,10 +33,20 @@ export const NuevoCliente = () => {
             .then(res => {
                 // validar si hay errores de mongo
                 if (res.data.code === 11000) {
-                    console.log('Error de duplicado de Mongo');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Hubo un error',
+                        text: 'Ese correo ya existe'
+                    })
                 } else {
-                    console.log(res.data);
+                    Swal.fire(
+                        'Exito!',
+                        res.data.mensaje,
+                        'success'
+                    )
                 }
+                // Redireccionar
+                history.push('/');
             });
     }
 
@@ -91,3 +104,6 @@ export const NuevoCliente = () => {
         </Fragment>
     )
 }
+
+// HOC, es una función que toma un componente y retorna un nuevo componente
+export default withRouter(NuevoCliente);

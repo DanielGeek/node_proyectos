@@ -11,7 +11,7 @@ import { Navegacion } from "./componentes/layout/Navegacion";
 import { Clientes } from "./componentes/clientes/Clientes";
 import { Productos } from "./componentes/productos/Productos";
 import { Pedidos } from "./componentes/pedidos/Pedidos";
-import { NuevoCliente } from "./componentes/clientes/NuevoCliente";
+import NuevoCliente from "./componentes/clientes/NuevoCliente";
 
 function App() {
   return (
