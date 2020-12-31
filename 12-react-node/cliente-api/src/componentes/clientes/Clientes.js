@@ -9,16 +9,17 @@ export const Clientes = () => {
 
     const [clientes, guardarClientes] = useState([]);
 
-    // Query a la API
-    const consultarAPI = async () => {
-        const clientesConsulta = await clienteAxios.get('/clientes');
-        const { data } = clientesConsulta;
-        guardarClientes(data);
-    }
+
 
     useEffect(() => {
+        // Query a la API
+        const consultarAPI = async () => {
+            const clientesConsulta = await clienteAxios.get('/clientes');
+            const { data } = clientesConsulta;
+            guardarClientes(data);
+        }
         consultarAPI();
-    }, []);
+    }, [clientes]);
 
     return (
         <Fragment>
