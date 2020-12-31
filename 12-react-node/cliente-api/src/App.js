@@ -9,10 +9,12 @@ import { Navegacion } from "./componentes/layout/Navegacion";
 
 // Componentes
 import { Clientes } from "./componentes/clientes/Clientes";
-import { Productos } from "./componentes/productos/Productos";
 import { Pedidos } from "./componentes/pedidos/Pedidos";
 import NuevoCliente from "./componentes/clientes/NuevoCliente";
 import EditarCliente from "./componentes/clientes/EditarCliente";
+import { Productos } from "./componentes/productos/Productos";
+import { NuevoProducto } from "./componentes/productos/NuevoProducto";
+import { EditarProducto } from "./componentes/productos/EditarProducto";
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
               <Route exact path="/" component={Clientes} />
               <Route exac path="/clientes/nuevo" component={NuevoCliente} />
               <Route exac path="/clientes/editar/:id" component={EditarCliente} />
+
+              <Route exact path="/productos" component={Productos} />
+              <Route exac path="/productos/nuevo" component={NuevoProducto} />
+              <Route exac path="/productos/editar/:id" component={EditarProducto} />
 
               <Route exact path="/productos" component={Productos} />
 
