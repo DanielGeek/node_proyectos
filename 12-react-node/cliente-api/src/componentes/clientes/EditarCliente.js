@@ -19,20 +19,22 @@ const EditarCliente = (props) => {
     });
 
     // Destructuring
-    const { nombre, apellido, email, empresa, telefono } = cliente;
+    const { _id, nombre, apellido, email, empresa, telefono } = cliente;
 
-    // Query a la API
-    const consultarAPI = async () => {
-        const clienteConsulta = await clienteAxios.get(`/clientes/${id}`);
 
-        // guardar en el state
-        datosCliente(clienteConsulta.data);
-    }
 
     // useEffect, cuando el componente carga
     useEffect(() => {
+        // Query a la API
+        const consultarAPI = async () => {
+            const clienteConsulta = await clienteAxios.get(`/clientes/${id}`);
+
+            // guardar en el state
+            datosCliente(clienteConsulta.data);
+        }
+
         consultarAPI();
-    }, []);
+    }, [id]);
 
     // Leer los datos del formulario
     const actualizarState = e => {
@@ -42,6 +44,33 @@ const EditarCliente = (props) => {
             ...cliente,
             [e.target.name]: e.target.value
         });
+    }
+
+    // Enviar petición por axios para actualizar el cliente
+    const actualizarCliente = e => {
+        e.preventDefault();
+
+        // enviar petición por axios
+        clienteAxios.put(`/clientes/${_id}`, cliente)
+            .then(res => {
+                // validar si hay errores de mongo
+                if (res.data.code === 11000) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Hubo un error',
+                        text: 'Ese correo ya existe'
+                    })
+                } else {
+                    Swal.fire(
+                        'Exito!',
+                        'Se actualizo correctamente!',
+                        'success'
+                    )
+                }
+
+                // redireccionar
+                props.history.push('/');
+            })
     }
 
     // Validar el formulario
@@ -58,7 +87,9 @@ const EditarCliente = (props) => {
         <Fragment>
             <h2>Editar Cliente</h2>
 
-            <form>
+            <form
+                onSubmit={actualizarCliente}
+            >
                 <legend>Llena todos los campos</legend>
 
                 <div className="campo">
