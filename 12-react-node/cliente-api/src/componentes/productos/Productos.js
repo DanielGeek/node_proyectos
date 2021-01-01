@@ -19,7 +19,7 @@ export const Productos = () => {
         // llamado a la api
         consultarAPI();
 
-    }, [])
+    }, [productos])
 
     return (
         <Fragment>
