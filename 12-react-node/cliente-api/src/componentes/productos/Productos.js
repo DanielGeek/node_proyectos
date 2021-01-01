@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import clienteAxios from '../../config/axios';
 import { Producto } from './Producto';
+import { Spinner } from '../layout/Spinner';
 
 export const Productos = () => {
 
@@ -19,7 +20,10 @@ export const Productos = () => {
         // llamado a la api
         consultarAPI();
 
-    }, [productos])
+    }, [productos]);
+
+    // Spinner de carga
+    if (!productos.length) return <Spinner />
 
     return (
         <Fragment>
