@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import clienteAxios from '../../config/axios';
+import { Producto } from './Producto';
 
 export const Productos = () => {
 
@@ -29,24 +30,12 @@ export const Productos = () => {
             </Link>
 
             <ul className="listado-productos">
-                <li className="producto">
-                    <div className="info-producto">
-                        <p className="nombre">VueJS</p>
-                        <p className="precio">$25.00 </p>
-                        <img alt="imagen 1" src="img/1.jpg" />
-                    </div>
-                    <div className="acciones">
-                        <a href="#" className="btn btn-azul">
-                            <i className="fas fa-pen-alt"></i>
-                            Editar Producto
-                        </a>
-
-                        <button type="button" className="btn btn-rojo btn-eliminar">
-                            <i className="fas fa-times"></i>
-                            Eliminar Cliente
-                        </button>
-                    </div>
-                </li>
+                {productos.map(producto => (
+                    <Producto
+                        key={producto._id}
+                        producto={producto}
+                    />
+                ))}
             </ul>
         </Fragment>
     )
