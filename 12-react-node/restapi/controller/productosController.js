@@ -2,6 +2,7 @@ const Productos = require('../models/Productos');
 
 const multer = require('multer');
 const shortid = require('shortid');
+const fs = require('fs');
 
 const configuracionMulter = {
     storage: fileStorage = multer.diskStorage({
@@ -118,7 +119,19 @@ exports.actualizarProducto = async (req, res, next) => {
 exports.eliminarProducto = async (req, res, next) => {
     const { idProducto } = req.params;
     try {
+        // buscar la ruta de la imagen a eliminar
+        const producto = await Productos.findById({ _id: idProducto });
+        console.log(producto.imagen);
+        // if existe la imagen la eliminamos
+        if (producto.imagen) {
+            fs.unlink(__dirname + '../../uploads/' + producto.imagen, function (err) {
+                if (err) throw err;
+                console.log('File deleted');
+            });
+        }
+
         await Productos.findByIdAndDelete({ _id: idProducto });
+
         res.json({ mensaje: 'El producto se ha eliminado' });
     } catch (error) {
         console.log(error);
