@@ -1,0 +1,12 @@
+{
+    // aplicar las reglas standar de js https://standardjs.com/rules.html
+    "extends": "standard-with-typescript",
+    // obtener la config para tscript
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    //inhabilitar warnings
+    "rules": {
+        "@typescript-eslint/no-redeclare": "off"
+    }
+}

@@ -1,0 +1,3 @@
+// ignora la verificación de estos archivos con eslint
+node_modules
+dist
