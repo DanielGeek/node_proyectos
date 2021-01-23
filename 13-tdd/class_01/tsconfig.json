@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        // [outDir] luego del compilado se guardara en esta carpetass
+        // [outDir] luego del compilado se guardara en esta carpeta
         "outDir": "./dist/",
         // [target]:[es2019] usar las últimas funciones de js, nota: verificar si la version de tu node es compatible https://node.green/#ES2015
         "target": "es2019",
