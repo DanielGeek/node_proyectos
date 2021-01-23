@@ -1,0 +1,259 @@
+[33mcommit 6ac9186afcc1f65e1c887dea49fa9304fedf4430[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sat Jan 23 01:23:09 2021 -0300
+
+    chore:add husky and lint staged
+
+[33mcommit 765feb72bb29c10ac0e78ceac5628ff74e988035[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sat Jan 23 01:18:33 2021 -0300
+
+    chore: add husky and lint stage
+
+[33mcommit 8163c20c668e0f9ed24b546753cd147a051e4bcd[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 01:47:00 2021 -0300
+
+    chore: add package config eslint
+
+[33mcommit c02121b86a256c777bf1154bce88dffdc09f857b[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 01:00:36 2021 -0300
+
+    chore: add typescript
+
+[33mcommit 19cfdb109fe71b833447b334b9ec0091c3be593e[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 00:22:07 2021 -0300
+
+    add npm start
+
+[33mcommit bba4bb13b7e8c5ef93c170b1634c8c099b1a9023[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 00:18:54 2021 -0300
+
+    chore: add npm package and git msg linter
+
+[33mcommit c7c126188b0a7690f6a46a97d098c5c954e226ea[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 00:10:10 2021 -0300
+
+    add npm start
+
+[33mcommit 7d404b18b29b18d018305f4e49ae7152a3f56098[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Fri Jan 22 00:05:42 2021 -0300
+
+    chore: add npm package and git msg linter
+
+[33mcommit 2ccd970d6c641c333f24b7f2ac435d30b1c7047c[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 22:49:42 2020 -0300
+
+    339. Agregando un spinner de carga
+
+[33mcommit 0952efc6e9da88d07c349bd57dac50022f7f8137[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 22:36:52 2020 -0300
+
+    338. Eliminando Productos
+
+[33mcommit d6cfdfc070a2c9924859d68be8b410320451b24e[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 22:24:14 2020 -0300
+
+    338. Eliminando Productos
+
+[33mcommit bef019cb1ac95a7e2b336ff155732518cd711807[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 22:13:36 2020 -0300
+
+    337. Listando los Productos y sus Imágenes
+
+[33mcommit f4765de8f59eea31742059585eb3ac84cd7b93fd[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 01:29:33 2020 -0300
+
+    336. Obteniendo los Productos de la API
+
+[33mcommit b1de315e1b0b36bd58ece4166ce2ecc90d84262a[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 01:11:31 2020 -0300
+
+    335. Creando el Routing y Componentes
+
+[33mcommit b4e26aa09aba40a276388f96909be296800f97c0[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 01:03:59 2020 -0300
+
+    334. Eliminar Clientes
+
+[33mcommit f8c091863d2e5e849f42ef576a8371c42781e931[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Thu Dec 31 00:41:28 2020 -0300
+
+    333. Almacenando los cambios en la BD
+
+[33mcommit f238534ecc1afefb2a3b11a22f5fba30fabbe3f4[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 01:31:32 2020 -0300
+
+    332. Obteniendo el Cliente que se desea editar
+
+[33mcommit 656ca1910c590465d2951e95b863f265e8e6e3b6[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 01:17:38 2020 -0300
+
+    331. Creando el Componente para editar clientes
+
+[33mcommit 6995583c2d34f987fe4668863a4eb643613776ea[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 01:08:31 2020 -0300
+
+    330. Utilizando Sweet Alert para las alertas
+
+[33mcommit 032e60ab1ff05f5be9ac2c81886c7e3252e48d37[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 00:45:42 2020 -0300
+
+    329. Enviando la petición a la REST API
+
+[33mcommit 161d625c98998da5a1fa399fd376459e2073d952[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 00:19:04 2020 -0300
+
+    328. Validar formularios en react
+
+[33mcommit 80a5f7111f9ff58d59f1938d23086232ce6c0fd6[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Wed Dec 30 00:10:05 2020 -0300
+
+     Miniatura de la clase Pausa Rebobinar 5 1.5Velocidad de reproducción Avanza 5s 8:56 / 9:12 Subtítulos Configuración Pantalla completa 327. Leyendo los datos del formulario y almacenando en el state
+
+[33mcommit a6f5682cb06488bad72d9b153c4e0622639508f2[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 23:36:47 2020 -0300
+
+    326. Agregando formulario para nuevos clientes
+
+[33mcommit e4970ebba1c8541a115ad3b52da9034a05706c0c[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 23:26:52 2020 -0300
+
+    325. Creando un Componente para nuevos clientes
+
+[33mcommit e39e6a6c9a97930fce1d35a9297c9097f307b365[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 02:22:05 2020 -0300
+
+    asasas
+
+[33mcommit 946deb14d5b731177a7c7efa0e6c9362e760460a[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 02:17:28 2020 -0300
+
+    324. Insertando los registros de la base de datos en el HTML
+
+[33mcommit 97c5594289997e58b6ca926c86dc7a8a2d93f376[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 01:40:35 2020 -0300
+
+    323. Almacenando los resultados de la consulta en el state y useState
+
+[33mcommit 3d6e9a60f9fddb7a76badec17c3204f36095538c[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 01:21:01 2020 -0300
+
+    322. Habilitar Cors y Consumir la API
+
+[33mcommit 01ea13c3b9af1e5fdab310bb64b6adcc33f52d4b[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Tue Dec 29 00:40:48 2020 -0300
+
+    313. Eliminar Pedido por ID
+
+[33mcommit 8b6bad9ce096f52def84bda6b9fbc2be08f4e521[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Mon Dec 28 23:20:04 2020 -0300
+
+    312. Actualizar Pedido por ID
+
+[33mcommit 416e4a33d379dfdf25014400511fa73ae8d5d3f3[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Mon Dec 28 23:08:05 2020 -0300
+
+    311. Mostrar un Pedido por ID
+
+[33mcommit 1fbdd6aa27ee916a7aa76c0e4974fa0169ea046f[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Mon Dec 28 22:59:46 2020 -0300
+
+    310. Mostrar todos los Pedidos con relaciones de Productos y Usuarios
+
+[33mcommit 3c996630af0997ae9dcafc10d5affed1925f30e1[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 23:56:45 2020 -0300
+
+    309. Creando nuevos pedidos
+
+[33mcommit 2132c6d2e9692c8065afc423d10a340403a42ae4[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 23:38:05 2020 -0300
+
+    308. Definiendo el Modelo de Pedidos
+
+[33mcommit ee72283d4c6a612835c78e3db9ee216736c40764[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 23:31:38 2020 -0300
+
+    307. Eliminar un Producto
+
+[33mcommit 4f83a0519d62d128f39481698bca584e462d4d79[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 23:02:57 2020 -0300
+
+    306. Actualizar un Producto
+
+[33mcommit d2b7e70948f9d67019732ce235cc629026a6f2dd[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 22:35:53 2020 -0300
+
+    305. Mostrar un Producto por ID
+
+[33mcommit 66472154ff2a2564ad360c5eb9692bfb3414bd7a[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 21:46:52 2020 -0300
+
+    304. Mostrar todos los Productos
+
+[33mcommit 55207a0be2343b480fad3696d19476aedabcbf91[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 21:32:01 2020 -0300
+
+    303. Subir una imagen via REST API
+
+[33mcommit 9f6e0104b2ff0ca41c02f18a0fe21a5b24661c1a[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 21:04:57 2020 -0300
+
+    302. Creando nuevos Productos
+
+[33mcommit 9bc71bedbfbe9f4aaee44e61e3d16c1687d35287[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 20:48:49 2020 -0300
+
+    301. Definiendo el Modelo de Productos
+
+[33mcommit 6ebc4629fdad5328525b38b6ddd1f0a9bb49f80d[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 09:49:17 2020 -0300
+
+    300. Eliminar un Cliente por ID
+
+[33mcommit 290f9103ad523f77f4c4c7a6ad620a9e0fbc288a[m
+Author: DanielGeek <daniel30081990@gmail.com>
+Date:   Sun Dec 27 09:41:33 2020 -0300
+
+    299. Actualizar un Cliente por ID
+
+[33mcommit 85da2c10ddc00d81fa1691ef899d8f91
