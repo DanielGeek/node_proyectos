@@ -1,11 +1,15 @@
 export class VehicleModel {
-  name: string
-  model: string
-  year: number
+  constructor (private readonly name: string, private readonly model: string, private readonly year: number) { }
 
-  constructor () {
-    this.name = 'Nissan'
-    this.model = 'DXT'
-    this.year = 2020
+  getName (): string {
+    return this.name
+  }
+
+  getModel (): string {
+    return this.model
+  }
+
+  getYear (): number {
+    return this.year
   }
 }

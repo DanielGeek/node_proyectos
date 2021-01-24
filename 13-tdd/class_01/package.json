@@ -4,7 +4,7 @@
   "description": "proyecto para aplicar TDD y clean code",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage --watch",
     "start": "node app"
   },
   "keywords": [],
