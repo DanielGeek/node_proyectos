@@ -18,4 +18,8 @@ export class FoodModel {
   getInventory (): number {
     return this.foodHelper.inventory
   }
+
+  getFood (): any {
+    return Object.assign(this, this.foodHelper)
+  }
 }
