@@ -14,6 +14,6 @@ describe('Team class', () => {
   it('Soccer Play', () => {
     const soccerPlay = new Team()
 
-    expect(soccerPlay.attacker('attacker')).toBe('attacker')
+    expect(soccerPlay.attacker('')).toBe('attacker')
   })
 })
