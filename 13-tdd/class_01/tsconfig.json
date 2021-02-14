@@ -8,5 +8,6 @@
         "module": "commonjs",
         // [allowJs]:[true] permitir el uso de [CommonJS]
         "allowJs": true,
+        "esModuleInterop": true
     }
 }
