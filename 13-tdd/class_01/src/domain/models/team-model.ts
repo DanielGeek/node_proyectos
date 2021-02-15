@@ -1,4 +1,4 @@
-import { ISoccerPlay, ITeam } from '../interfaces/ITeam'
+import { ISoccerPlay, ITeam } from '../../interfaces/ITeam'
 
 export class Team implements ITeam, ISoccerPlay {
   position (name: string, tShirt: number, skills: any[]): any[] {

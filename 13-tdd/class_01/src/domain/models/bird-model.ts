@@ -1,4 +1,4 @@
-import { IBird } from '../interfaces/IBird'
+import { IBird } from '../../interfaces/IBird'
 
 export class Bird {
   constructor (public ibird: IBird) {

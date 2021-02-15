@@ -1,5 +1,5 @@
-import { HttpRequest, HttpResponse } from '../interfaces/http-interface'
-import { MissingFormalParameter } from '../errors/client-error'
+import { MissingFormalParameter } from '../../errors/client-error'
+import { HttpRequest, HttpResponse } from '../../interfaces/http-interface'
 
 export class RegisterVehicle {
   // recibe el tipo HttpRequest y retorna el tipo HttpResponse

@@ -4,7 +4,11 @@
   "description": "proyecto para aplicar TDD y clean code",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --passWithNoTests --silent --noStackTrace",
+    "test:all": "jest",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:int": "npm test -- --watch -c jest-int-config.js",
+    "test:coverage": "npm test -- --coverage",
     "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/main/server/server.ts"
   },
   "keywords": [],

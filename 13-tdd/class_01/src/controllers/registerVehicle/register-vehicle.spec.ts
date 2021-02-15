@@ -1,5 +1,5 @@
-import { RegisterVehicle } from '../controllers/register-vehicle'
-import { MissingFormalParameter } from '../errors/client-error'
+import { MissingFormalParameter } from '../../errors/client-error'
+import { RegisterVehicle } from './register-vehicle'
 // pruebas para saber si no existe una propiedad
 describe('RegisterVehicle', () => {
   test('the name does not exist return 400', () => {
