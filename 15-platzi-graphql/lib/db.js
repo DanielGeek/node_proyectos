@@ -8,7 +8,7 @@ const mongoUrl = `mongodb+srv://${DB_USER}:${DB_PASSWD}@${DB_HOST}/${DB_NAME}?re
 let connection
 
 async function connectDB () {
-  if (connection) return connection
+  if (connection) return connection.db()
 
   let client
   try {
@@ -16,13 +16,14 @@ async function connectDB () {
       useNewUrlParser: true,
       useUnifiedTopology: true
     })
+
     connection = await client.connect()
   } catch (error) {
     console.error('Could not connect to db', mongoUrl, error)
     process.exit(1)
   }
 
-  return connection
+  return connection.db()
 }
 
 module.exports = connectDB
