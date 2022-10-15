@@ -9,14 +9,14 @@ const courses = [
     topic: 'programation'
   },
   {
-    _id: 'anyid',
+    _id: 'anyid2',
     title: 'My title 2',
     teacher: 'My teacher',
     description: 'A description',
     topic: 'programation'
   },
   {
-    _id: 'anyid',
+    _id: 'anyid3',
     title: 'My title 3',
     teacher: 'My teacher',
     description: 'A description',
@@ -25,7 +25,10 @@ const courses = [
 ]
 
 module.exports = {
-  getCourses: () => {
-    return courses
+  Query: {
+    getCourses: () => {
+      return courses
+    },
+    getCourse: (root, args) => courses.find((course) => course._id === args.id)
   }
 }
