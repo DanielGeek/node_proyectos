@@ -71,6 +71,32 @@ module.exports = {
     }
 
     return student
+  },
+  addPeople: async (root, { courseID, personID }) => {
+    let db
+    let person
+    let course
+
+    try {
+      db = await connectDB()
+      course = await db.collection('courses').findOne(
+        { _id: ObjectId(courseID) }
+      )
+      person = await db.collection('students').findOne(
+        { _id: ObjectId(personID) }
+      )
+
+      if (!course || !person) throw new Error("The person or course don't exist")
+
+      await db.collection('courses').updateOne(
+        { _id: ObjectId(courseID) },
+        { $addToSet: { people: ObjectId(personID) } }
+      )
+    } catch (error) {
+      console.log(error)
+    }
+
+    return course
   }
 
 }
