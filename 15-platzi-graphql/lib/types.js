@@ -2,6 +2,7 @@
 
 const connectDB = require('./db')
 const { ObjectId } = require('mongodb')
+const errorHandler = require('./errorHandler')
 
 module.exports = {
   Course: {
@@ -18,7 +19,7 @@ module.exports = {
           ).toArray()
           : []
       } catch (error) {
-        console.log(error)
+        errorHandler(error)
       }
 
       return peopleData
