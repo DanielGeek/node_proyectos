@@ -23,7 +23,7 @@ module.exports = {
     }
     return newCourse
   },
-  createStudent: async (root, { input }) => {
+  createPerson: async (root, { input }) => {
     let db
     let student
     try {
@@ -54,7 +54,7 @@ module.exports = {
 
     return course
   },
-  editStudent: async (root, { _id, input }) => {
+  editPerson: async (root, { _id, input }) => {
     let db
     let student
 
