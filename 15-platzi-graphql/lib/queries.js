@@ -53,5 +53,21 @@ module.exports = {
     }
 
     return student
+  },
+  searchItems: async (root, { keyword }) => {
+    let db
+    let items
+    let courses
+    let people
+    try {
+      db = await connectDb()
+      courses = await db.collection('courses').find({ $text: { $search: keyword } }).toArray()
+      people = await db.collection('students').find({ $text: { $search: keyword } }).toArray()
+      items = [...courses, ...people]
+    } catch (error) {
+      errorHandler(error)
+    }
+
+    return items
   }
 }
