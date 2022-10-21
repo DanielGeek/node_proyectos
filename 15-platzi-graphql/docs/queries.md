@@ -49,3 +49,30 @@ It requires a JSON object like:
   "course": "634a2094b1a02accfeed3b58"
 }
 ```
+
+## Directives
+
+```graphql
+query getPeopleData($monitor: Boolean!, $avatar: Boolean!){
+  getPeople{
+    _id
+    name
+    ... on Monitor @include(if: $monitor) {
+      phone
+    }
+    ... on Student @include(if: $avatar) {
+      avatar
+      email
+    }
+  }
+}
+```
+
+Requiere un objeto JSON como:
+
+```json
+{
+  "monitor": false,
+  "avatar": true
+}
+```
