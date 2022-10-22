@@ -10,7 +10,7 @@
   "author": "edsadr",
   "license": "MIT",
   "dependencies": {
-    "graphql-request": "^1.8.2",
+    "graphql-request": "^5.0.0",
     "handlebars": "^4.1.1"
   },
   "devDependencies": {
