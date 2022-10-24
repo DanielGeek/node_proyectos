@@ -1,0 +1,7 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "description": "Frontend of our application with Next.js",
+  "main": "index.js",
+  "license": "MIT"
+}
