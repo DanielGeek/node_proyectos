@@ -4,7 +4,7 @@ import * as scalars from './modules/base/scalars.model'
 export default {
   ...scalars,
   Query: {
-    avo: avo.findOne,
+    // avo: avo.findOne,
     avos: avo.findAll,
   },
   Mutation: {
