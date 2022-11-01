@@ -1,5 +1,4 @@
 import { createHash } from 'crypto'
-import { baseModelResolver } from '../base/base.resolver'
 import type { Attributes, Avocado, PrismaClient } from '@prisma/client';
 
 type ResolverContext = {
@@ -7,12 +6,15 @@ type ResolverContext = {
 }
 
 export function findAll(parent: unknown, arg: unknown, context: ResolverContext): Promise<Avocado[]> {
-  return context.orm.avocado.findMany()
+  return context.orm.avocado.findMany({  include: { attributes: true } })
 }
 
-// export function findOne(id: string): Avocado | null {
-//   return avos[0]
-// }
+export function findOne(parent: unknown, args: { id: string }, context: ResolverContext): Promise<Avocado | null> {
+  return context.orm.avocado.findUnique({
+      where: { id: parseInt(args.id, 10) },
+      include: { attributes: true }
+    })
+}
 
 export const resolver: Record<keyof (Avocado & {attributes: Attributes}), (parent: Avocado & {attributes: Attributes}) => unknown> = {
   id: (parent) => parent.id,
