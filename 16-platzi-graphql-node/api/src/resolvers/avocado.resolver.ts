@@ -1,12 +1,17 @@
 import { createHash } from 'crypto'
-import type { Attributes, Avocado, PrismaClient } from '@prisma/client';
+import type { Attributes, Avocado, PrismaClient, Prisma } from '@prisma/client';
 
 type ResolverContext = {
   orm: PrismaClient
 }
 
-export function findAll(parent: unknown, arg: unknown, context: ResolverContext): Promise<Avocado[]> {
-  return context.orm.avocado.findMany({  include: { attributes: true } })
+export function findAll(parent: unknown, args: { skip?: number, take?: number, where: Prisma.AvocadoWhereInput }, context: ResolverContext): Promise<Avocado[]> {
+  return context.orm.avocado.findMany({
+            include: { attributes: true },
+            skip: args.skip,
+            take: args.take,
+            where: args.where
+        })
 }
 
 export function findOne(parent: unknown, args: { id: string }, context: ResolverContext): Promise<Avocado | null> {
