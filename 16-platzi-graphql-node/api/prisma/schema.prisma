@@ -1,20 +1,17 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
-}
-
 generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
 model Avocado {
-  id        Int       @id @default(autoincrement())
-  createdAt DateTime  @default(now())
-  updatedAt DateTime? @updatedAt
-  deletedAt DateTime?
+  id         Int         @id @default(autoincrement())
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime?   @updatedAt
+  deletedAt  DateTime?
   name       String
   sku        String      @unique
   price      Float
@@ -28,6 +25,6 @@ model Attributes {
   shape       String?
   hardiness   String?
   taste       String?
+  avocadoId   Int     @unique
   avocado     Avocado @relation(fields: [avocadoId], references: [id])
-  avocadoId   Int
 }
