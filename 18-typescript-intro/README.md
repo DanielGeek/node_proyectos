@@ -4,3 +4,8 @@
 ```
 yarn create vite
 ```
+
+# Start proyect
+```
+yarn dev
+```
