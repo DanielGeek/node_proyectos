@@ -7,3 +7,8 @@ npx prisma init
 ```
 npx prisma migrate dev
 ```
+
+# create user
+```
+yarn ts-node src/createAdmin.ts
+```
