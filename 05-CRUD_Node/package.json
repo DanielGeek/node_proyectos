@@ -20,7 +20,7 @@
   "homepage": "https://github.com/DanielGeek/CRUD_Node#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.8.6",
     "morgan": "^1.9.1"
   },
